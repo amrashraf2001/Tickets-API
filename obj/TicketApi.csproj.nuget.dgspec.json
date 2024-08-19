@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\training\\Task2\\TicketApi\\TicketApi.csproj": {}
+    "D:\\training\\codeFirst\\TicketAPI\\TicketAPI.csproj": {}
   },
   "projects": {
-    "D:\\training\\Task2\\TicketApi\\TicketApi.csproj": {
+    "D:\\training\\codeFirst\\TicketAPI\\TicketAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\training\\Task2\\TicketApi\\TicketApi.csproj",
-        "projectName": "TicketApi",
-        "projectPath": "D:\\training\\Task2\\TicketApi\\TicketApi.csproj",
+        "projectUniqueName": "D:\\training\\codeFirst\\TicketAPI\\TicketAPI.csproj",
+        "projectName": "TicketAPI",
+        "projectPath": "D:\\training\\codeFirst\\TicketAPI\\TicketAPI.csproj",
         "packagesPath": "C:\\Users\\UWU\\.nuget\\packages\\",
-        "outputPath": "D:\\training\\Task2\\TicketApi\\obj\\",
+        "outputPath": "D:\\training\\codeFirst\\TicketAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,10 +44,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.8, )"

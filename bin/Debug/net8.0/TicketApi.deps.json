@@ -6,15 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "TicketApi/1.0.0": {
+      "TicketAPI/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.8",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
-          "TicketApi.dll": {}
+          "TicketAPI.dll": {}
         }
       },
       "Azure.Core/1.35.0": {
@@ -914,7 +913,7 @@
     }
   },
   "libraries": {
-    "TicketApi/1.0.0": {
+    "TicketAPI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

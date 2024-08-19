@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace TicketApi.Migrations
+namespace TicketAPI.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
@@ -12,7 +12,7 @@ namespace TicketApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Tickets",
+                name: "Ticketsnew",
                 columns: table => new
                 {
                     TicketId = table.Column<int>(type: "int", nullable: false)
@@ -23,7 +23,7 @@ namespace TicketApi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tickets", x => x.TicketId);
+                    table.PrimaryKey("PK_Ticketsnew", x => x.TicketId);
                 });
         }
 
@@ -31,7 +31,7 @@ namespace TicketApi.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Tickets");
+                name: "Ticketsnew");
         }
     }
 }

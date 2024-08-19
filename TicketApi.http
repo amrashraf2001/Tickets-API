@@ -1,6 +1,6 @@
-@TicketApi_HostAddress = http://localhost:5224
+@TicketAPI_HostAddress = http://localhost:5128
 
-GET {{TicketApi_HostAddress}}/weatherforecast/
+GET {{TicketAPI_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

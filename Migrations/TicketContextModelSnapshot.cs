@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TicketApi.Models;
+using TicketAPI.Data;
 
 #nullable disable
 
-namespace TicketApi.Migrations
+namespace TicketAPI.Migrations
 {
     [DbContext(typeof(TicketContext))]
     partial class TicketContextModelSnapshot : ModelSnapshot
@@ -22,7 +22,7 @@ namespace TicketApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("TicketApi.Models.Ticket", b =>
+            modelBuilder.Entity("TicketAPI.Models.Ticket", b =>
                 {
                     b.Property<int>("TicketId")
                         .ValueGeneratedOnAdd()
@@ -42,7 +42,7 @@ namespace TicketApi.Migrations
 
                     b.HasKey("TicketId");
 
-                    b.ToTable("Tickets");
+                    b.ToTable("Ticketsnew", (string)null);
                 });
 #pragma warning restore 612, 618
         }

@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TicketApi.Models;
+using TicketAPI.Data;
+using TicketAPI.Models;
 
-namespace TicketApi.Controllers
+namespace TicketAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -37,16 +37,6 @@ namespace TicketApi.Controllers
             return ticket;
         }
 
-        // POST: api/Tickets
-        [HttpPost]
-        public async Task<ActionResult<Ticket>> PostTicket(Ticket ticket)
-        {
-            _context.Tickets.Add(ticket);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetTicket), new { id = ticket.TicketId }, ticket);
-        }
-
         // PUT: api/Tickets/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTicket(int id, Ticket ticket)
@@ -75,6 +65,16 @@ namespace TicketApi.Controllers
             }
 
             return NoContent();
+        }
+
+        // POST: api/Tickets
+        [HttpPost]
+        public async Task<ActionResult<Ticket>> PostTicket(Ticket ticket)
+        {
+            _context.Tickets.Add(ticket);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetTicket", new { id = ticket.TicketId }, ticket);
         }
 
         // DELETE: api/Tickets/5

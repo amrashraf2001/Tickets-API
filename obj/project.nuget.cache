@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7sEa6Vku/0IyebU0VgdikiW9fZNER1STyY+0GiKjKsoFN8TgORZa5y1dPRn41ok7QOaKZhZS3ncOUXxccGNtOg==",
+  "dgSpecHash": "eCZzH3NkV3WezHTA34ctTpC/XwuJ0oxDmvV9+4VoN6lgrJ/sPhlL+JwGjX69y2k3xOB8ffL7uL407IsLFdRqnw==",
   "success": true,
-  "projectFilePath": "D:\\training\\Task2\\TicketApi\\TicketApi.csproj",
+  "projectFilePath": "D:\\training\\codeFirst\\TicketAPI\\TicketAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UWU\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\UWU\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
