@@ -12,8 +12,8 @@ using TicketAPI.Data;
 namespace TicketAPI.Migrations
 {
     [DbContext(typeof(TicketContext))]
-    [Migration("20240819224718_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240819230423_FirstDB")]
+    partial class FirstDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

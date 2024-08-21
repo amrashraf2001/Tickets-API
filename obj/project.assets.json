@@ -4528,11 +4528,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\training\\codeFirst\\TicketAPI\\TicketAPI.csproj",
+      "projectUniqueName": "D:\\training\\Task2\\TicketApi\\TicketAPI.csproj",
       "projectName": "TicketAPI",
-      "projectPath": "D:\\training\\codeFirst\\TicketAPI\\TicketAPI.csproj",
+      "projectPath": "D:\\training\\Task2\\TicketApi\\TicketAPI.csproj",
       "packagesPath": "C:\\Users\\UWU\\.nuget\\packages\\",
-      "outputPath": "D:\\training\\codeFirst\\TicketAPI\\obj\\",
+      "outputPath": "D:\\training\\Task2\\TicketApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

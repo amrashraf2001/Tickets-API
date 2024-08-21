@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using TicketAPI.Data;
 using TicketAPI.Models;
+using System.Linq;
 
 namespace TicketAPI.Controllers
 {
@@ -21,6 +22,63 @@ namespace TicketAPI.Controllers
         public async Task<ActionResult<IEnumerable<Ticket>>> GetTickets()
         {
             return await _context.Tickets.ToListAsync();
+        }
+
+        // GET: api/Tickets/type/Kiosk
+        [HttpGet("type/{type}")]
+        public async Task<ActionResult<IEnumerable<Ticket>>> GetTicketsByType(string type)
+        {
+            return await _context.Tickets.Where(t => t.Type == type).ToListAsync();
+        }
+
+        // GET: api/Tickets/getTicketsTotalPrices
+        [HttpGet("getTicketsTotalPrices")]
+        public async Task<ActionResult<decimal>> GetTicketsTotalPrices()
+        {
+            var totalPrices = await _context.Tickets.SumAsync(t => t.Price);
+            return totalPrices;
+        }
+
+        // GET: api/Tickets/getTicketsTotalPricesByType/Kiosk
+        [HttpGet("getTicketsTotalPricesByType/{type}")]
+        public async Task<ActionResult<decimal>> GetTicketsTotalPricesByType(string type)
+        {
+            var totalPrices = await _context.Tickets.Where(t => t.Type == type).SumAsync(t => t.Price);
+            return totalPrices;
+        }
+
+        // GET: api/Tickets/getTicketsCount
+        [HttpGet("getTicketsCount")]
+        public async Task<ActionResult<int>> GetTicketsCount()
+        {
+            var count = await _context.Tickets.CountAsync();
+            return count;
+        }
+
+        // GET: api/Tickets/getTicketsCountByType/Kiosk
+        [HttpGet("getTicketsCountByType/{type}")]
+        public async Task<ActionResult<int>> GetTicketsCountByType(string type)
+        {
+            var count = await _context.Tickets.Where(t => t.Type == type).CountAsync();
+            return count;
+        }
+
+        // GET: api/Tickets/getTodayTicketsCount
+        [HttpGet("getTodayTicketsCount")]
+        public async Task<ActionResult<int>> GetTodayTicketsCount()
+        {
+            var today = DateTime.Today;
+            var count = await _context.Tickets.Where(t => t.Date == today).CountAsync();
+            return count;
+        }
+
+        // Get: api/Tickets/getTodayTicketsPrices
+        [HttpGet("getTodayTicketsPrices")]
+        public async Task<ActionResult<decimal>> GetTodayTicketsPrices()
+        {
+            var today = DateTime.Today;
+            var totalPrices = await _context.Tickets.Where(t => t.Date == today).SumAsync(t => t.Price);
+            return totalPrices;
         }
 
         // GET: api/Tickets/5
