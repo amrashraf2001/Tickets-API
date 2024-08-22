@@ -14,7 +14,7 @@ namespace TicketAPI.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Ticket>().ToTable("Ticketsnew");
+            modelBuilder.Entity<Ticket>().ToTable("Ticket");
         }
     }
 }

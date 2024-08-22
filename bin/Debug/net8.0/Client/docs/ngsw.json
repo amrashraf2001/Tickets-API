@@ -1,0 +1,97 @@
+{
+  "configVersion": 1,
+  "timestamp": 1723570185578,
+  "index": "/Tickets-Dashboard/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Tickets-Dashboard/favicon.ico",
+        "/Tickets-Dashboard/index.html",
+        "/Tickets-Dashboard/main.3d9fcbd4b3332206.js",
+        "/Tickets-Dashboard/manifest.webmanifest",
+        "/Tickets-Dashboard/polyfills.97db43a5e4b4e69b.js",
+        "/Tickets-Dashboard/runtime.4779d9c13cc61d95.js",
+        "/Tickets-Dashboard/styles.ea0f0e5eb1e1c222.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Tickets-Dashboard/apple-touch-icon.png",
+        "/Tickets-Dashboard/assets/Stocks.png",
+        "/Tickets-Dashboard/assets/booth.png",
+        "/Tickets-Dashboard/assets/cal.jpg",
+        "/Tickets-Dashboard/assets/ngx-rocket-logo.png",
+        "/Tickets-Dashboard/assets/ngx-rocket-logo@192.png",
+        "/Tickets-Dashboard/assets/shop.png",
+        "/Tickets-Dashboard/assets/tickets.png",
+        "/Tickets-Dashboard/fa-brands-400.1342812213307936.ttf",
+        "/Tickets-Dashboard/fa-brands-400.60e5c9d38b143ff0.woff2",
+        "/Tickets-Dashboard/fa-regular-400.6f7d0aec71887524.woff2",
+        "/Tickets-Dashboard/fa-regular-400.d151c40a03a8a2ce.ttf",
+        "/Tickets-Dashboard/fa-solid-900.bd6c2137b5c6cc45.ttf",
+        "/Tickets-Dashboard/fa-solid-900.cece584ee568dd5d.woff2",
+        "/Tickets-Dashboard/fa-v4compatibility.9b501f80e05db435.ttf",
+        "/Tickets-Dashboard/fa-v4compatibility.e43d16026daea060.woff2"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/Tickets-Dashboard/apple-touch-icon.png": "229df2094cc590088de00ea97a1eb4e4493101d2",
+    "/Tickets-Dashboard/assets/Stocks.png": "9771d2742162977d0803e8cfba37e19bcc0e0977",
+    "/Tickets-Dashboard/assets/booth.png": "3b1b7cc32cf42e1a5ca16f264a469ba49d1e360d",
+    "/Tickets-Dashboard/assets/cal.jpg": "24da0fc410a0edb39363c61e33269a5acd6dc1d3",
+    "/Tickets-Dashboard/assets/ngx-rocket-logo.png": "0ac53fd27406fe5a36e68285315fb0012e54058e",
+    "/Tickets-Dashboard/assets/ngx-rocket-logo@192.png": "461b730f9c6dc818f8af9acbe62dfde24dc02d7a",
+    "/Tickets-Dashboard/assets/shop.png": "9aeb612a7d374eb1b0c60110be1204b92675e770",
+    "/Tickets-Dashboard/assets/tickets.png": "9cd4a5ebee9db0868c181f480c25bc53df2dba24",
+    "/Tickets-Dashboard/fa-brands-400.1342812213307936.ttf": "7ce89c71d5a51ac65b159c71422783dd86529c66",
+    "/Tickets-Dashboard/fa-brands-400.60e5c9d38b143ff0.woff2": "e948290773216dc1b50c2121314a8cf918c22b54",
+    "/Tickets-Dashboard/fa-regular-400.6f7d0aec71887524.woff2": "46e272db3db1072791628679bc469112c8e41017",
+    "/Tickets-Dashboard/fa-regular-400.d151c40a03a8a2ce.ttf": "775e2ecfc18d22b177274453d4c014ca6be63208",
+    "/Tickets-Dashboard/fa-solid-900.bd6c2137b5c6cc45.ttf": "2b8e11389d98122399667cf64941eb58497dc128",
+    "/Tickets-Dashboard/fa-solid-900.cece584ee568dd5d.woff2": "69335cd6a6ac82253ea5545899cccde35af39131",
+    "/Tickets-Dashboard/fa-v4compatibility.9b501f80e05db435.ttf": "bd27e43f3d1e5019faaabc9ec6c5d3d7c5f100ef",
+    "/Tickets-Dashboard/fa-v4compatibility.e43d16026daea060.woff2": "87d0bbc38baa356297521c41ed8ca7d78e8d16e2",
+    "/Tickets-Dashboard/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
+    "/Tickets-Dashboard/index.html": "e29a5fa7c817938c49401aa639a647fd5a6f0f1b",
+    "/Tickets-Dashboard/main.3d9fcbd4b3332206.js": "67e352dace2c7cd8f6ea9c639530559a6cec1e6e",
+    "/Tickets-Dashboard/manifest.webmanifest": "f910f2eccc48e88864980771f4d036387a5603d7",
+    "/Tickets-Dashboard/polyfills.97db43a5e4b4e69b.js": "e8621a2a1c9842a088ab15bdcbeffcfc0efc4a4e",
+    "/Tickets-Dashboard/runtime.4779d9c13cc61d95.js": "7009a3e3d979d5c7962e4ab78fd245f2680a1097",
+    "/Tickets-Dashboard/styles.ea0f0e5eb1e1c222.css": "d33a9c3b1db4892fd347282930a69b51558c3944"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
